@@ -1,0 +1,32 @@
+id = setInterval(function(){
+if(count==0){
+    time=3000
+    alert("0 seconds : Your order is accepted")
+    // count++
+}
+else if(count==1){
+    time=5000
+    alert("3 seconds : Your order is being Prepared")
+    // count++
+}
+else if(count==2){
+    time=2000
+    alert("8 seconds : Your order is being packed  ")
+    // count++
+}
+else if(count==3){
+    time=2000
+    alert("10 seconds : Your order is out for delivery")
+    // count++
+}
+
+else if(count==4){
+    time=0
+    alert("12 seconds : Order delivered")
+    // count++
+    clearInterval(id) 
+    count=0
+}
+count++
+console.log(count,time)
+},time)
